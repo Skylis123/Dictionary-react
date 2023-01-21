@@ -1,0 +1,51 @@
+.App {
+    background-color: aquamarine;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding : 5px;
+    min-height: 25vh;
+    margin-left: 80vh;
+    margin-right: 80vh;
+}
+
+.textInput {
+    margin-left: 13vh;
+}
+
+.gameName {
+    margin-left: 20vh;
+}
+
+.searchButtom{
+    border: none;
+    padding: 10px 10px;
+    border-radius: 15px;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+
+.addWordButton{
+    border: none;
+    padding: 10px 10px;
+    border-radius: 15px;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+    margin-right : 55px;
+}
+
+.container {
+    margin-left: 13vh;
+}
+
+.textInput{
+    border-radius: 10px;
+}

@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react"
+import Dictionary from "./Dictionary";
+import "./DictionaryCss.css"
 
 function App() {
+
+  const [newWord, setNewWord] = useState("");
+  const handleNewWord = (event) => {
+    setNewWord(event.target.value);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className = "App">
+      <div className = "gameName">Dictionary</div>
+      <input className = "textInput"onChange = {handleNewWord}/>
+      <Dictionary newWord = {newWord}/>
     </div>
-  );
+
+
+  )
 }
 
 export default App;
